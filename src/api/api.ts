@@ -1,8 +1,8 @@
 // import axios from "axios";
 
-import { Countries } from "../types/countryType";
+import { CountryArray } from "../components/CountryList";
 
-export const fetchData = async (): Promise<Countries[]> => {
+export const fetchData = async (): Promise<CountryArray> => {
   // try {
   const response = await fetch("https://restcountries.com/v3.1/all");
   const data = await response.json();
