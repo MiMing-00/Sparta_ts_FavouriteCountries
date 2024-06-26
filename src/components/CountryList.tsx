@@ -23,8 +23,6 @@ const CountryList = () => {
     const theCountry = data[index];
 
     if (index === -1) {
-      console.log("못 찾은 거니..!");
-      // setAllCountry((prev) => [theCountry, ...prev]);
       return;
     }
 
@@ -47,7 +45,6 @@ const CountryList = () => {
 
   return (
     <div>
-      {/* 맵으로 뿌리기 */}
       <h2 className="font-bold">선택된 나라</h2>
       <ul className="grid xl:grid-cols-4 gap-4 md:grid-cols-3 gap-3 sm:grid-cols-2 gap-2">
         {selectedCountry?.map((country) => (
@@ -62,7 +59,6 @@ const CountryList = () => {
         ))}
       </ul>
       <br />
-      {/* 생각해보니 셀렉트 됐으면 여기에 안 나와야 한다. */}
       <h2 className="font-bold">모든 나라</h2>
       <ul className="grid xl:grid-cols-4 gap-4 md:grid-cols-3 gap-3 sm:grid-cols-2 gap-2">
         {allCountry?.map((country) => (
