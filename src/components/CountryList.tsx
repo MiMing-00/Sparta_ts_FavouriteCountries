@@ -17,7 +17,7 @@ const CountryList = () => {
     });
   }, []);
 
-  const handleOnclickEvent = (event: React.FormEvent<HTMLLIElement>) => {
+  const handleOnclickEvent = (event: React.MouseEvent<HTMLLIElement>) => {
     const theCountryId = event.currentTarget.id;
     const index = data.findIndex((item) => item.cca2 === theCountryId);
     const theCountry = data[index];
