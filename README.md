@@ -1,30 +1,10 @@
 # React + TypeScript + Vite
+타입스크립트 + 리액트를 이용하여 제작하였습니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 프로젝트 요구 사항
+## 초기 데이터 로드
+- [x] API를 통해 모든 국가 데이터를 가져와 사용자에게 모든 국가의 목록을 표기합니다.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 국가 선택 및 이동
+- [x] 사용자가 특정 국가를 선택하면 해당 국가는 '모든 국가' 리스트에서 '선택된 국가' 리스트로 이동합니다.
+- [x] 다시 한 번 선택하면 '선택된 국가' 리스트에서 '모든 국가' 리스트로 되돌아갑니다.
