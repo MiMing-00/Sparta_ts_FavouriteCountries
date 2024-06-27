@@ -1,8 +1,13 @@
 import { Countries } from "../types/countryType";
 
-const CountryCard = ({ country }: { country: Countries }) => {
+type CountryCardProps = {
+  country: Countries;
+  handleOnclickEvent: (theCountry: Countries) => void;
+};
+
+const CountryCard = ({ country, handleOnclickEvent }: CountryCardProps) => {
   return (
-    <div>
+    <div onClick={() => handleOnclickEvent(country)}>
       <p>{country.flag}</p>
       <p>{country.name.common}</p>
       <p>{country.capital}</p>
