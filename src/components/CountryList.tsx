@@ -66,7 +66,7 @@ const CountryList = () => {
         {selectedCountry?.map((country: Countries) => (
           <li
             key={country.cca2}
-            className="border-2 border-emerald-200 rounded-xl my-4 h-[80px] truncate cursor-pointer"
+            className="border-2 border-emerald-300 rounded-xl my-4 h-[80px] truncate cursor-pointer hover:shadow-md"
             id={country.cca2}
           >
             <CountryCard
@@ -82,7 +82,7 @@ const CountryList = () => {
         {unselectedData?.map((country: Countries) => (
           <li
             key={country.cca2}
-            className="border-2 border-indigo-200 rounded-xl my-4 h-[80px] truncate cursor-pointer"
+            className="border-2 border-indigo-200 rounded-xl my-4 h-[80px] truncate cursor-pointer hover:shadow-md"
             id={country.cca2}
           >
             <CountryCard
